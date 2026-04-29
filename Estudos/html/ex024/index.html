@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    body{
+       font-family: Arial, Helvetica, sans-serif; 
+       background-color: bisque;
+    }
+    header{
+        background-color: antiquewhite;
+        padding: 10px;
+        margin: 10px;
+    }
+    nav{
+        background-color: lightblue;
+        padding: 3px;
+        box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.397);
+    }
+    nav > a {
+        text-decoration: none;
+        background-color: rgba(224, 255, 255, 0.466);
+        font-weight: bold;
+        margin-right: 3px;
+    }
+     main{
+        background-color: antiquewhite;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        border-radius: 10px 0px;
+        box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.301);
+    }
+     footer{
+        background-color: rgba(19, 18, 18, 0.116);
+        color: white;
+        padding: 1px;
+        margin: 0px;
+        text-align: center;
+    }
+    footer > p {
+        margin: 0px;
+        border-radius: 5px 5px;
+        box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.301);
+    }
+/*     Exemplo de bola
+        div#bola{
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 50%;
+    } */
+</style>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aperiam itaque. Nulla iusto, ad in et tempora possimus corporis reprehenderit quisquam explicabo minima quae, repellat suscipit nostrum doloribus maiores ullam!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Video</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html> 
