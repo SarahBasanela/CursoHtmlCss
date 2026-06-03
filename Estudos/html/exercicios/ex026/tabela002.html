@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
+
+        table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
-        td, th{
+
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
-            text-align: center;
-        }   
-        thead, tfoot{
+            /* text-align: center; */
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead,
+        tfoot {
             background-color: gray;
             color: white;
-        } 
-        </style>
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /*Deixa as linhas da tabela com efeito zebrado (2n) significa de a cada 2º linha pinta de cinza pode usar tabem odd(impar) even(par)*/
+        tbody>tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Uso de TAbelas Grandes</h1>
-<!--
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -35,27 +66,159 @@
         TFOOTER
             TR, TD, TH
     -->
-        <table>
-            <thead>
-                <th>Estado</th>
-                <th>População</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>São Paulo</td>
-                    <td>45 345 211</td>
-                </tr>
-                <tr>
-                    <td>Minas Gerais</td>
-                    <td>12 876 099</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>Total de Habitantes</th>
-                    <td>00000</td>
-                </tr>
-            </tfoot>
-        </table>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">12 876 099</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 345 211</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">12 876 099</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <th scope="row">00000</th>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium assumenda nulla corporis perspiciatis, distinctio veniam voluptatum non officia odio? Perferendis culpa laudantium quod commodi exercitationem quaerat sit eius aut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae accusantium, nemo delectus, repellendus nihil ratione maiores corporis atque veritatis rem. Harum ipsum tempora vel cum maiores amet veritatis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in optio ad pariatur placeat a enim porro possimus quisquam velit iste accusantium corrupti, provident et, iure esse soluta dignissimos! Soluta?</p>
 </body>
+
 </html>
